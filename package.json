@@ -1,0 +1,21 @@
+{
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "express": "^4.15.2",
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.4.0",
+    "grunt-contrib-cssmin": "^2.0.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-qunit": "^2.0.0",
+    "grunt-contrib-uglify": "^0.5.1",
+    "grunt-contrib-watch": "~0.6.1",
+    "jshint-stylish": "^2.2.1",
+    "uglify": "^0.1.5"
+  },
+  "dependencies": {
+    "matchdep": "^1.0.1"
+  }
+}

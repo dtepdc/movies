@@ -1,0 +1,36 @@
+<div class="container" id="movies">
+<h2>Movie Search</h2>
+        <!-- START row -->
+        <div>
+            <div>
+                <div class="col-md-12" class="form-group">                
+                    <form name="movieForm" class="form-inline">
+
+                    <div class="app-info"><em>This app uses Angular to pull in the NYTimes Movie Review API. View source code on <a href="https://github.com/dtepdc/apps/tree/movies/movies">Github</a>.</em></div>
+                        <div class="find pull-left">
+                            Find a NYTimes movie review based on its title: 
+                        </div>
+                        <input type="string" class="movie-title form-control pull-left" required ng-model="title">
+                        <input type="submit" value="Search" class="btn btn-success pull-left" ng-disabled="movieForm.$invalid" ng-click="findMovie()" />
+                        <div class="clearfix"></div>
+                    </form>
+                </div>
+            </div>
+                <div class="col-md-9 col-lg-7 result-list">
+                    <div ng-cloak ng-repeat="result in results | filter: { display_title: title }"  class="row results">
+                        <div class="col-md-4">
+                            <a href="{{ result.link.url }}" target="_blank">
+                                <img ng-src="{{ result.multimedia.src }}" height="140" width="210" class="movie-image" />
+                            </a>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="summary"><strong><em><a href="{{ result.link.url }}" target="_blank">{{ result.display_title }}</a></em></strong>
+                                </div>
+                                 <div>{{ result.summary_short }}</div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div ng-show="(results | filter:resultsFilter).length == 0"><strong>No movies found for that title. Maybe try "Tootsie"?</strong></div>
+
+        </div>
+</div>

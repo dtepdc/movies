@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="/" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Dawn Tepper</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/landing-page.css" rel="stylesheet">
+
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+     
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body ng-app="app">
+
+    <nav class="navbar navbar-inverse bg-inverse navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="/">Dawn Tepper</a>
+            </div>  
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" data-toggle="collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/movies">Movies App</a>
+                    </li>
+                    <li>
+                        <a href="mailto:dawn714@gmail.com">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div ng-view></div>  
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline pull-left">
+                        <li>
+                            <a href="http://www.dtepdc.com">Home</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                            <a href="mailto:dawn714@gmail.com">Contact</a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted small pull-right">&copy; Dawn Tepper 2014 | All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-route/angular-route.min.js"></script>
+    <script src="node_modules/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="js/app.min.js"></script>
+
+</body>
+
+</html>
